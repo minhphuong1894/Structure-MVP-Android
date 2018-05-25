@@ -36,7 +36,7 @@ public class HomeActivity extends BaseActivity implements HomeContract.View,Draw
 
     private DrawerFragment mFragmentDrawer;
 
-    private ActionBarDrawerToggle mActionDrawer;
+    ActionBarDrawerToggle mActionDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

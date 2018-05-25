@@ -10,4 +10,6 @@
 
     <color name="colorPurple">#292850</color>
     <color name="colorPurple_Transparent">#3d000000</color>
+    <color name="grayLight">#ebebeb</color>
+    <color name="colorBlack">#000000</color>
 </resources>
