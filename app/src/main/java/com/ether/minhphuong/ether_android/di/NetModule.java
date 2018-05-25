@@ -1,14 +1,19 @@
 package com.ether.minhphuong.ether_android.di;
 
+import android.app.Application;
+
 import com.ether.minhphuong.ether_android.BuildConfig;
+import com.ether.minhphuong.ether_android.datasource.remote.response.ResponseCacheInterceptor;
 import com.ether.minhphuong.ether_android.utils.ApiContants;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -25,8 +30,9 @@ public class NetModule {
 
     @Singleton
     @Provides
-    OkHttpClient okHttpClient() {
+    OkHttpClient okHttpClient(Application application) {
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
+        Cache cache = new Cache(new File(application.getCacheDir(), "apiResponses"), 10 * 1024 * 1024);
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         return new OkHttpClient.Builder()
                 .addInterceptor(chain -> {
@@ -35,6 +41,8 @@ public class NetModule {
                             .addHeader("User-Agent", "Android");
                     return chain.proceed(newBuilder.build());
                 })
+                .addNetworkInterceptor(new ResponseCacheInterceptor())
+                .cache(cache)
                 .addInterceptor(loggingInterceptor)
                 .retryOnConnectionFailure(true)
                 .connectTimeout(ApiContants.Net.API_REQUEST_TIMEOUT, TimeUnit.MILLISECONDS)
