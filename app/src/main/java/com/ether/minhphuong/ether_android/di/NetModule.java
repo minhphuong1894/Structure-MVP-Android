@@ -1,8 +1,5 @@
 package com.ether.minhphuong.ether_android.di;
 
-import android.app.Application;
-import android.text.TextUtils;
-
 import com.ether.minhphuong.ether_android.BuildConfig;
 import com.ether.minhphuong.ether_android.utils.ApiContants;
 
@@ -49,7 +46,7 @@ public class NetModule {
     @Provides
     Retrofit retrofit(OkHttpClient okHttpClient) {
         Retrofit.Builder builder = new Retrofit.Builder();
-        builder.baseUrl("http://mobile.dev.edeel.dirox.net");
+        builder.baseUrl(BuildConfig.HOST);
         return builder.addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)

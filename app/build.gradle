@@ -1,13 +1,19 @@
 apply plugin: 'com.android.application'
 
+
+def MAJOR = 0
+def MINOR = 0
+def PATCH = 1
+
+def BUILD_NUMBER = 1
+
 android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.ether.minhphuong.ether_android"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode BUILD_NUMBER
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -20,6 +26,11 @@ android {
         jumboMode true
         javaMaxHeapSize "4g"
     }
+
+    android {
+        flavorDimensions "default"
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -29,6 +40,22 @@ android {
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
+    }
+    productFlavors {
+        Production {
+            versionName "${MAJOR}.${MINOR}.${PATCH}"
+            applicationId "com.ether.minhphuong.production"
+            buildConfigField "Boolean", "DEBUG_MODE", "false"
+            buildConfigField "String", "HOST", '"https://api.etherscan.io"'
+            resValue "string", "app_name", "EtherManged"
+        }
+        EtherDev {
+            versionName "${MAJOR}.${MINOR}.${PATCH}"
+            applicationId "com.ether.minhphuong.dev"
+            buildConfigField "Boolean", "DEBUG_MODE", "true"
+            buildConfigField "String", "HOST", '"https://api-ropsten.etherscan.io"'
+            resValue "string", "app_name", "EtherManged - Dev"
+        }
     }
 }
 

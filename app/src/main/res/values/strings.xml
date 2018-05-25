@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">EtherManged</string>
     <string name="dialog_title_oops">Oops</string>
     <string name="content_desc">Default Content Description</string>
-    <string name="origin_name">Ether Manged</string>
+    <string name="origin_name">EtherManged</string>
 
 
     <!--Dropdown default values-->
