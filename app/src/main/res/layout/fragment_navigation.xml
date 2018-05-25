@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPurple">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPurple"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_transaction_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_16dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_24_small"
+                            android:layout_height="@dimen/icon_size_24_small"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_16dp"
+                            android:layout_marginRight="@dimen/margin_16dp"
+                            android:contentDescription="@string/content_desc"
+                            android:src="@drawable/ic_ico_menu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/navigation_transaction_title"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_16_header" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/colorPurple" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_recover_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPurple_Transparent"
+                        android:paddingBottom="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_16dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_24_small"
+                            android:layout_height="@dimen/icon_size_24_small"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_16dp"
+                            android:layout_marginRight="@dimen/margin_16dp"
+                            android:contentDescription="@string/content_desc"
+                            android:src="@drawable/ic_ico_backpress" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/navigation_recover_title"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_16_header" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPurple" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_change_pin_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPurple_Transparent"
+                        android:paddingBottom="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_16dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_24_small"
+                            android:layout_height="@dimen/icon_size_24_small"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_16dp"
+                            android:layout_marginRight="@dimen/margin_16dp"
+                            android:contentDescription="@string/content_desc"
+                            app:srcCompat="@drawable/ic_ico_menu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/navigation_change_pin_title"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_16_header" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPurple" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_earn_coin_navigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPurple_Transparent"
+                        android:paddingBottom="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_16dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_24_small"
+                            android:layout_height="@dimen/icon_size_24_small"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_16dp"
+                            android:layout_marginRight="@dimen/margin_16dp"
+                            android:contentDescription="@string/content_desc"
+                            android:src="@drawable/ic_ico_backpress" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/navigation_earn_coin"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_16_header" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPurple" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_join_airdrop_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPurple_Transparent"
+                        android:paddingBottom="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_16dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_24_small"
+                            android:layout_height="@dimen/icon_size_24_small"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_16dp"
+                            android:layout_marginRight="@dimen/margin_16dp"
+                            android:contentDescription="@string/content_desc"
+                            android:src="@drawable/ic_ico_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/navigation_air_drop_title"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_16_header" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/colorPurple" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_sign_out_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPurple_Transparent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin_16dp"
+                    android:paddingTop="@dimen/margin_16dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size_24_small"
+                        android:layout_height="@dimen/icon_size_24_small"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_16dp"
+                        android:layout_marginRight="@dimen/margin_16dp"
+                        android:contentDescription="@string/content_desc"
+                        android:src="@drawable/ic_ico_backpress" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/navigation_log_out_title"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_16_header" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line_height"
+                    android:background="@color/colorPurple" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

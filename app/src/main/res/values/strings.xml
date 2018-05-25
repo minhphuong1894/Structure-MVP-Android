@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">EtherManged</string>
+    <string name="dialog_title_oops">Oops</string>
+    <string name="content_desc">Default Content Description</string>
+    <string name="origin_name">Ether Manged</string>
+
+
+    <!--Dropdown default values-->
+    <string name="default_country">Please select country</string>
+    <string name="default_nationality">Please select nationality</string>
+    <string name="default_city">Please select city</string>
+    <string name="default_district">Please select district</string>
+    <string name="default_currency">Please select currency</string>
+    <string name="password_length_validation">The Password must have 8 characters.</string>
+    <string name="not_connect_internet">Please check your internet connection.</string>
+    <string name="dialog_label_retry">Retry</string>
+    <string name="dialog_label_close">Close App</string>
+
+    <!--Register activity-->
+    <string name="register_header_title">Sign up</string>
+
+    <!--Navigation-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Navigation-->
+    <string name="navigation_air_drop_title">Join Airdrop</string>
+    <string name="navigation_earn_coin">Earn Coin</string>
+    <string name="navigation_transaction_title">Transactions History</string>
+    <string name="navigation_recover_title">Recover</string>
+    <string name="navigation_change_pin_title">Change PIN Code</string>
+    <string name="navigation_log_out_title">Sign Out</string>
+
+</resources>

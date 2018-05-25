@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextSize global -->
+    <dimen name="text_size_20_title">20dp</dimen>
+    <dimen name="text_size_16_header">16dp</dimen>
+    <dimen name="text_size_14_normal">14dp</dimen>
+    <dimen name="text_size_12_small">12dp</dimen>
+    <dimen name="text_size_10_small">10dp</dimen>
+
+    <!-- margin global -->
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+
+    <!-- icon size global -->
+    <dimen name="icon_size_24_small">24dp</dimen>
+
+    <!-- height view line -->
+    <dimen name="view_line_height">1dp</dimen>
+
+    <!-- navigation -->
+    <dimen name="navigation_width">240dp</dimen>
+</resources>
