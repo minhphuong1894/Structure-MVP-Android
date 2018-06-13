@@ -1,7 +1,7 @@
 <resources>
     <string name="dialog_title_oops">Oops</string>
     <string name="content_desc">Default Content Description</string>
-    <string name="origin_name">EtherManged</string>
+    <string name="origin_name">MVPEther</string>
 
 
     <!--Dropdown default values-->
@@ -23,11 +23,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!--Navigation-->
-    <string name="navigation_air_drop_title">Join Airdrop</string>
-    <string name="navigation_earn_coin">Earn Coin</string>
-    <string name="navigation_transaction_title">Transactions History</string>
-    <string name="navigation_recover_title">Recover</string>
-    <string name="navigation_change_pin_title">Change PIN Code</string>
+    <string name="navigation_air_drop_title">Data 1</string>
+    <string name="navigation_earn_coin">Data 2</string>
+    <string name="navigation_transaction_title">Data 3</string>
+    <string name="navigation_recover_title">Data 4</string>
+    <string name="navigation_change_pin_title">Data 5</string>
     <string name="navigation_log_out_title">Sign Out</string>
 
 </resources>
